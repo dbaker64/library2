@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Version 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <dialog id="add-book-dialog">
+        <form id="add-book-form">
+            <h2>Add Book</h2>
+            <p></p>
+            <label for="title-field">Title:</label>
+            <input type="text" id="title-field">
+            <label for="author-field">Author:</label>
+            <input type="text" id="author-field">
+            <label for="genre-field">Genre:</label>
+            <input type="text" id="genre-field">
+            <label for="rating-field">Rating:</label>
+            <input type="number" id="rating-field">
+            <label for="pagecount-field">Page Count:</label>
+            <input type="number" id="pagecount-field">
+            <p>Read/Unread:</p>
+            <div>
+                <input type="checkbox" id="read" name="readunread-field">
+                <label for="read" name="readunread-field">Read</label>
+            </div>
+            <button type="submit" id="save-book-btn">Save Book</button>
+        </form>
+    </dialog>
+
     <div id="heading-div">
         <h1>Welcome to Your Library!</h1>
     </div>
     <div id="body-div">
-        <div id="sidebar">this is the sidebar</div>
+
+        <div id="sidebar">
+            <button id="add-book-btn">Add Book</button>
+            <button>List Books</button>
+            <p># of Books</p>
+        </div>
+
         <div id="bookshelf">
             <div class="book">
                 <h2 class="title">Title</h2>
@@ -27,17 +58,9 @@
                     <div class="removebtn"><button>Remove Book</button></div>
                 </div>
             </div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
